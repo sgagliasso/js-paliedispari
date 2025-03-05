@@ -47,14 +47,6 @@ palindroma("Anna");
 
 */
 
-// const words = "Anna"
-// const ispalindromas = "";
-//     for (let i = words.length; i <= 0; i--){
-//        const simo = words.charAt(i)
-//        ispalindromas.concat(simo)
-//        console.log(simo)
-//     }
-// console.log(ispalindromas)
 
 
 function palindroma (word){
@@ -69,5 +61,5 @@ for (let i = word.length - 1; i >= 0; i--) {  // Partiamo dall'ultimo carattere
 return result;
 }
  
-const word = prompt("Inserisci una parola e ti dirò se è palindorma")
-console.log(palindroma(word))
+const word = prompt("Inserisci una parola e ti dirò se è palindorma");
+console.log(palindroma(word));
