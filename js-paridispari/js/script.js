@@ -28,28 +28,32 @@ Domande da  farsi quando si crea una funzione:
 
 const choosePariDispari = prompt("Scegli pari o dispari")
 const numeroDaUnoASeiStr = prompt("Scegli un numero da 1 a 6")
-const numeroDaUnoASei = parseInt(numeroDaUnoASeiStr)
-console.log(choosePariDispari)
-console.log(numeroDaUnoASei)
-function randomNumber(min,max){
-        return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
+const numeroDaUnoASei = parseInt(numeroDaUnoASeiStr) //trasformo in un intero
+// debug
+// console.log(choosePariDispari)
+// console.log(numeroDaUnoASei)
 
-const randnum = randomNumber(1,6)
-console.log("numero random",randnum)
-console.log(numeroDaUnoASei + randnum)
+const randnum = randomNumber(1, 6)
+// debug
+// console.log(randnum) 
+// console.log(numeroDaUnoASei + randnum)
 const somma = (numeroDaUnoASei + randnum)
-function pariDispari(x){
-    let result = "dispari"
-    if (x % 2 === 0){
-        result = "pari";
-    }
-    return result;
-}
 
 if (choosePariDispari === pariDispari(somma)) {
     console.log("HAI VINTO!!")
-}else{
+} else {
     console.log("HAI PERSO!!")
-    
+}
+
+//function
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function pariDispari(x) {
+    let result = "dispari"
+    if (x % 2 === 0) {
+        result = "pari";
+    }
+    return result;
 }
